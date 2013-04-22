@@ -57,7 +57,7 @@ public class GUISCRIPTS : MonoBehaviour {
 				start = true;
 			}
 		}
-		if (playerscript!= null && playerscript.playerDead){
+		if (playerscript.playerDead){
 			if(GUI.Button (new Rect (UnityEngine.Screen.width/2-UnityEngine.Screen.width/10/2-100,UnityEngine.Screen.height/2-UnityEngine.Screen.height/10/2+UnityEngine.Screen.height/5,UnityEngine.Screen.width/10,UnityEngine.Screen.height/10), "Quit")){
 				//BACK TO MAIN MENU HERE
 				Application.LoadLevel("menu");

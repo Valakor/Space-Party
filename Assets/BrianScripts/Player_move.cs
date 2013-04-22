@@ -75,16 +75,6 @@ public class Player_move : MonoBehaviour
 				rH = curFrame.Hands[0];
 			}
 			
-			if ((lH.PalmVelocity.y<-100 || rH.PalmVelocity.y<-100) && prevRYVelocity<-100 && canPush){
-				canPush = false;
-				//Debug.Log("Hit");
-				if (playerDead){
-					//Debug.Log("Reset");
-					//Application.LoadLevel(0);
-				}
-				curTimer = resetTimer;
-			}
-			
 			prevRYVelocity =  rH.PalmVelocity.y;
 		//If there is only one hand.
 		}else if (curFrame.Hands.Count ==1){
